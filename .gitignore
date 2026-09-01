@@ -1,0 +1,5 @@
+state.json
+state.json.tmp
+state.json.corrupt
+server.log
+__pycache__/

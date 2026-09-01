@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Hub</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="eyebrow">Compiled reference</span>
+      <h1>Career Hub</h1>
+      <div class="sub">Freelancing &amp; job search, in one place</div>
+    </div>
+
+    <div class="searchbox">
+      <input type="search" id="search" placeholder="Search everything…" autocomplete="off" spellcheck="false">
+      <button class="clear" id="searchClear" title="Clear" hidden>&times;</button>
+    </div>
+    <div class="search-results" id="searchResults" hidden></div>
+
+    <nav class="toc" id="toc"></nav>
+
+    <div class="side-foot">
+      <button id="themeToggle" class="ghost-btn">Light / dark</button>
+      <span class="side-hint">Press <kbd>/</kbd> to search</span>
+    </div>
+  </aside>
+
+  <main class="content" id="content">
+    <header class="sec-head" id="secHead">
+      <div class="sec-head-main">
+        <span class="eyebrow" id="secGroup"></span>
+        <h2 id="secTitle"></h2>
+        <p class="provenance" id="secSource"></p>
+      </div>
+      <div class="sec-head-side" id="secCount"></div>
+    </header>
+
+    <div class="minitoc" id="minitoc" hidden></div>
+
+    <div class="sec-body" id="secBody"></div>
+
+    <footer class="page-foot" id="pageFoot"></footer>
+  </main>
+
+</div>
+
+<!-- status popover, moved next to whatever was clicked -->
+<div class="popover" id="popover" hidden>
+  <div class="pop-label" id="popLabel"></div>
+  <div class="pop-statuses" id="popStatuses"></div>
+  <textarea id="popNote" rows="4" placeholder="Notes — contact name, date applied, referral, rate quoted…"></textarea>
+  <div class="pop-actions">
+    <button class="ghost-btn" id="popClear">Clear</button>
+    <button class="primary-btn" id="popSave">Save</button>
+  </div>
+</div>
+
+<script src="/playbook-data.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
